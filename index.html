@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="#">
             <img class="page-header-logo" src="#" alt="Логотип города Седона">
@@ -39,16 +39,16 @@
           </ul>
         </nav>
       </header>
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Курорт Седона</h1>
-        <div class="main-index-background-logo">
+        <div class="main-index-background-logo" data-test="hero">
           <img class="main-index-logo" src="#" alt="Добро пожаловать в великолепную седону, потому что большой каньон отстой">
         </div>
-        <section class="info">
+        <section class="info" data-test="hero">
           <h2 class="info-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="info-items">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -99,7 +99,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2>
             <span class="visually-hidden">Поиск гостиницы</span>
             <span class="search-interest">Заинтересовались?</span>
@@ -109,8 +109,8 @@
           <button class="button search-button" type="button"><span class="button-search-hotels">поиск гостиницы в</span> седоне</button>
         </section>
       </main>
-      <footer class="page-footer">
-        <section class="subscribe">
+      <footer class="page-footer" data-test="footer">
+        <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
