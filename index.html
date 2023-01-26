@@ -10,7 +10,7 @@
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo" aria-current="page">
             <img class="page-header-logo" src="#" alt="Логотип города Седона" />
           </a>
           <ul class="navigation-list">
@@ -18,7 +18,7 @@
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О седоне</a>
+              <a class="navigation-link" href="#">О седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -28,12 +28,12 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <span class="navigation-number">12</span>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="navigation-number">12</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -43,21 +43,18 @@
         </nav>
       </header>
       <main class="main-index">
-        <h1 class="visually-hidden">Курорт Седона</h1>
-        <div class="main-index-background-image">
-          <img class="main-index-logo" src="#"
-            alt="Добро пожаловать в великолепную седону, потому что большой каньон отстой" />
-        </div>
-        <section class="info">
-          <h2 class="info-title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
-          <p class="info-description">
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-          </p>
+        <h1 class="visually-hidden">Город Седона</h1>
+        <section class="hero">
+          <h2 class="visually-hidden">О нас</h2>
+          <img class="hero-picture" src="#" alt="Горы">
+          <img class="hero-image" src="#" alt="welcome to the gorgeous Sedona because the grand canyon sucks!">
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
+          <p class="advantages-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="advantages-description-items">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
           <ul class="advantages-list">
             <li class="advantages-item">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -94,10 +91,10 @@
           </ul>
         </section>
         <section class="promo">
-          <h2 class="promo-title">
-            <span class="visually-hidden">Приглашение</span>
-            <span class="promo-title-description">Приезжайте в Седону отдохнуть в комфорте и уюте!</span>
-          </h2>
+          <h2 class="visually-hidden">Приглашаем Вас</h2>
+          <p class="promo-description">
+            Приезжайте в Седону отдохнуть в комфорте и уюте!
+          </p>
           <p class="promo-description">
             Опытный персонал и качественное обслуживание!
           </p>
@@ -127,10 +124,8 @@
           </ul>
         </section>
         <section class="search">
-          <h2 class="search-title">
-            <span class="visually-hidden">Поиск гостиницы</span>
-            <span class="search-title-description">Заинтересовались?</span>
-          </h2>
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <span class="search-title-description">Заинтересовались?</span>
           <p class="search-description">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в Седоне
@@ -147,11 +142,11 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="subscribe-container">
+            <p class="subscribe-container">
               <label class="visually-hidden" for="subscribe-email">Email</label>
               <input class="subscribe-field" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail"
                 required />
-            </div>
+            </p>
             <button class="button button-subscribe" type="submit">
               Подписаться
             </button>
@@ -161,19 +156,19 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link" href="https://vk.com/htmlacademy">
+              <a class="social-link" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Vkontakte</span>
                 <img class="social-image" src="#" alt="Вконтакте" />
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
+              <a class="social-link" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden">Telegram</span>
                 <img class="social-image" src="#" alt="Телеграмм" />
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <span class="visually-hidden">Youtube</span>
                 <img class="footer-social-image" src="#" alt="Youtube" />
               </a>
