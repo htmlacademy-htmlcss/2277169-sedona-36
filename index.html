@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page">
             <img class="page-header-logo" src="images/icons/logo-sedona-icon.svg" width="140" height="70"
@@ -38,26 +39,28 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button-brown button" href="#">Хочу сюда</a>
+              <a class="button button-brown" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Город Седона</h1>
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h2 class="visually-hidden">О нас</h2>
-          <img class="hero-picture" src="images/pictures/advantages-the-mountains-picture.jpg" width="1200" height="485"
-            alt="Вид на горы">
-          <img class="hero-image" src="images/icons/hero-icon.svg"
-            alt="welcome to the gorgeous Sedona because the grand canyon sucks!" width="458" height="352">
+          <div class="hero-background">
+            <img class="hero-picture" src="images/icons/hero-icon.svg"
+              alt="welcome to the gorgeous Sedona because the grand canyon sucks!" width="458" height="352">
+          </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="advantages-description-items">
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-          </p>
+          <div class="advantages-container">
+            <p class="advantages-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="advantages-description-items">
+              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+            </p>
+          </div>
           <ul class="advantages-list">
             <li class="advantages-item">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -97,7 +100,7 @@
         </section>
         <section class="promo">
           <h2 class="visually-hidden">Приглашаем Вас</h2>
-          <p class="promo-description">
+          <p class="promo-description-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </p>
           <p class="promo-description">
@@ -125,7 +128,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <span class="search-title-description">Заинтересовались?</span>
           <p class="search-description">
@@ -136,7 +139,7 @@
             <span class="button-search-hotels">поиск гостиницы в</span> седоне
           </a>
         </section>
-        <article class="subscribe">
+        <article class="subscribe subsctibe-picture" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -153,22 +156,22 @@
           </form>
         </article>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="link-vk" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://t.me/htmlacademy" target="_blank">
+              <a class="link-telegram" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <a class="link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>

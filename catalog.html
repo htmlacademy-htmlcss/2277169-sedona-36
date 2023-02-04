@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/icons/logo-sedona-icon.svg" width="140" height="70"
@@ -43,18 +44,18 @@
           </ul>
         </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <div class="catalog-container">
-          <section class="catalog-filter">
+          <section class="catalog-filter" data-test="filter">
             <h1 class="main-header-title">Гостиницы Седоны</h1>
             <div class="breadcrumbs-container">
               <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">
+                  <a class="breadcrumbs-icon" href="index.html">
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
-                <li class="breadcrumbs-item">
+                <li class="breadcrumbs-arrow">
                   <span class="visually-hidden">Следующая страница</span>
                 </li>
                 <li class="breadcrumbs-item">
@@ -73,11 +74,11 @@
                       <input class="filter-form" id="infrastructure" type="checkbox" name="infrastructure" checked>
                     </li>
                     <li class="filter-item">
-                      <label class="filter-container-title" for="parking">Парковка</label>
+                      <label class="filter-title" for="parking">Парковка</label>
                       <input class="filter-form" id="parking" type="checkbox" name="parking" checked>
                     </li>
                     <li class="filter-item">
-                      <label class="filter-container-title" for="wi-fi">Wi-Fi</label>
+                      <label class="filter-title" for="wi-fi">Wi-Fi</label>
                       <input class="filter-form" id="wi-fi" type="checkbox" name="wi-fi">
                     </li>
                   </ul>
@@ -100,6 +101,7 @@
                   </ul>
                 </fieldset>
                 <div>
+                  <span class="filter-subtitle">Стоимость, ₽:</span>
                   <input class="price-form" type="text" name="price-min">
                   <input class="price-form" type="text" name="price-max">
                 </div>
@@ -109,7 +111,7 @@
             </div>
           </section>
         </div>
-        <section class="assortment">
+        <section class="assortment" data-test="catalog">
           <header class="assortment-container">
             <h2 class="visually-hidden">Результат поиска</h2>
             <p class="search-results">Найдено гостиниц: <span class="search-number">38</span></p>
@@ -225,6 +227,7 @@
               <li class="pagination-item">
                 <a class="pagination-link pagination-more" href="#">
                   <span class="visually-hidden">Показать еще</span>
+                  <span class="points">...</span>
                 </a>
               </li>
               <li class="pagination-item">
@@ -233,7 +236,7 @@
             </ul>
           </footer>
         </section>
-        <article class="footer-subscribe">
+        <article class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -250,7 +253,7 @@
           </form>
         </article>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">

@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+
+/*header*/
+
+.page-header {
+  font-weight: 700;
+}
+.navigation-link {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.button {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.button-brown {
+  background: #756157;
+}
+.button-blue {
+  background: #82B3D3;
+}
+.button-green {
+  background: #7DB54F;
+}
+
+/*hero блок*/
+
+.hero-background {
+  background-image: url("../images/icons/hero-ladder.svg"), url("../images/pictures/the-mountains-picture.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+  background-color: #000000;
+  background-size: 100% auto;
+}
+
+/*Блок преимуществ*/
+
+.advantages-description-title,
+.promo-description-title,
+.search-title-description,
+.subscribe-title,
+.search-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.advantages-description-items,
+.promo-description,
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantages-title,
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-list li:first-child,
+.advantages-list li:nth-last-child(1) {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+.advantages-list li:nth-child(2),
+.advantages-list li:nth-last-child(2),
+.services-list li:first-child,
+.services-list li:nth-last-child(1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-list li:nth-of-type(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/*Блок подписки*/
+
+.subscribe-picture {
+  background-image: url("../images/pictures/subscribe-background-picture.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+/*footer*/
+
+.link-vk {
+  background: url("../images/icons/vk-icon.svg") no-repeat;
+  background-size: 24px 14px;
+}
+.link-telegram {
+  background: url("../images/icons/telegram-icon.svg") no-repeat;
+  background-size: 18px 16px;
+}
+.link-youtube {
+  background: url("../images/icons/youtube-icon.svg") no-repeat;
+  background-size: 22px 17px;
+}
+.contacts-phone {
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+color: #000000;
+text-transform: uppercase;
+text-decoration-line: none;
+}
+
+/*catalog*/
+.catalog-filter {
+  background-image: url("../images/pictures/catalog-background-picture.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.main-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+}
+.filter-subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.filter-title {
+  line-height: 23px;
+}
+.card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+.card-type {
+  text-align: left;
+}
+.card-price {
+  text-align: right;
+}
+.card-description {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  width: 140px;
+  height: 37px;
+}
+.card-link {
+  text-decoration: none;
+}
