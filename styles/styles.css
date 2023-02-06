@@ -81,7 +81,7 @@ body {
   background-image: url("../images/icons/hero-ladder.svg"), url("../images/pictures/the-mountains-picture.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
-  background-color: #000000;
+  background-color: #756157;
   background-size: 100% auto;
 }
 /*Блок преимуществ*/
@@ -102,6 +102,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #000000;
 }
 .features-item-primary {
   background-color: #82B3D3;
@@ -132,7 +133,7 @@ body {
 /*Блок подписки*/
 
 .subscribe-picture {
-  background: #000000 url("../images/pictures/subscribe-background-picture.jpg") no-repeat;
+  background: #756157 url("../images/pictures/subscribe-background-picture.jpg") no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
 }
@@ -141,24 +142,10 @@ body {
 }
 
 /*footer*/
-/*
-.social-item-vk {
-  background: url("../images/icons/vk-icon.svg") no-repeat;
-  background-size: 24px 14px;
-}
-.social-item-telegram {
-  background: url("../images/icons/telegram-icon.svg") no-repeat;
-  background-size: 18px 16px;
-}
-.social-item-youtube {
-  background: url("../images/icons/youtube-icon.svg") no-repeat;
-  background-size: 22px 17px;
-}
-*/
+
 .contacts-phone {
 font-size: 40px;
 line-height: 40px;
-text-align: center;
 color: #000000;
 text-transform: uppercase;
 text-decoration: none;
@@ -167,11 +154,9 @@ text-decoration: none;
 /*catalog*/
 
 .catalog-container {
-  background-image: url("../images/pictures/catalog-background-picture.png");
-  background-repeat: no-repeat;
+  background: #756157 url("../images/pictures/catalog-background-picture.png") no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
-  background-color: #000000;
 }
 .breadcrumbs-icon {
   background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat;
@@ -189,13 +174,13 @@ text-decoration: none;
 .breadcrumbs-link {
   font-size: 16px;
 }
-.filter-subtitle {
+.filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.filter-title {
+.filter-subtitle {
   line-height: 23px;
 }
 .card-title {
@@ -217,9 +202,7 @@ text-decoration: none;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background: #F2F2F2;
-  width: 140px;
-  height: 37px;
+  background-color: #F2F2F2;
 }
 
 /*Пагинация*/
@@ -239,4 +222,9 @@ text-decoration: none;
 .pagination-more {
   color: #000000;
   background-color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe-title {
+  color: #000000;
 }
