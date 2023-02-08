@@ -13,14 +13,27 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans",Arial,sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
   text-align: center;
+}
+.main-container {
+  flex-grow: 1;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
 .button {
   color: #FFFFFF;
@@ -72,7 +85,7 @@ body {
   background-size: 20px 20px;
 }
 .navigation-list {
-  list-style-type: none;
+  list-style: none;
 }
 
 /*hero блок*/
@@ -115,7 +128,11 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .advantages-features-list {
-  list-style-type: none;
+  list-style: none;
+}
+.features-image {
+  max-width: 100%;
+  display: block;
 }
 
 /*promo блок*/
@@ -133,7 +150,7 @@ body {
   background-size: 75px 72px;
 }
 .services-list {
-  list-style-type: none;
+  list-style: none;
 }
 
 /*Блок подписки*/
@@ -157,7 +174,7 @@ text-transform: uppercase;
 text-decoration: none;
 }
 .social-list {
-  list-style-type: none;
+  list-style: none;
 }
 
 /*catalog*/
@@ -166,6 +183,11 @@ text-decoration: none;
   background: #756157 url("../images/pictures/catalog-background-picture.png") no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
+}
+.main-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
 }
 .breadcrumbs-icon {
   background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat;
@@ -176,18 +198,13 @@ text-decoration: none;
   background-size: 8px 19.94px;
 }
 .breadcrumbs-list {
-  list-style-type: none;
-}
-.main-header-title {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
+  list-style: none;
 }
 .breadcrumbs-link {
   font-size: 16px;
 }
 .filter-list {
-  list-style-type: none;
+  list-style: none;
 }
 .filter-title {
   font-size: 20px;
@@ -198,8 +215,11 @@ text-decoration: none;
 .filter-subtitle {
   line-height: 23px;
 }
+
+/*Блок карточек отелей*/
+
 .hotels-card-list {
-  list-style-type: none;
+  list-style: none;
 }
 .card-title {
   font-size: 24px;
@@ -226,7 +246,7 @@ text-decoration: none;
 /*Пагинация*/
 
 .pagination-list {
-  list-style-type: none;
+  list-style: none;
 }
 .pagination-link {
   color: #FFFFFF;
