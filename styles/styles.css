@@ -105,12 +105,14 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  justify-content: space-between;
+  width: 1060px;
   margin: 0 auto;
 }
 
 .navigation-logo {
-  margin-left: 70px;
+  margin-right: 44px;
+  width: 140px;
 }
 
 .navigation-user {
