@@ -23,11 +23,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans",Arial,sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .button {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -55,11 +55,11 @@ body {
 }
 
 .button-blue {
-  background: #82B3D3;
+  background: #82b3d3;
 }
 
 .button-green {
-  background: #7DB54F;
+  background: #7db54f;
 }
 
 .visually-hidden {
@@ -121,24 +121,25 @@ body {
 /*hero блок*/
 
 .hero-background {
-  background-image: url("../images/icons/hero-ladder.svg"), url("../images/pictures/the-mountains-picture.jpg");
+  background-image: url("../images/icons/hero-ladder.svg"),
+    url("../images/pictures/the-mountains-picture.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-color: #756157;
   background-size: 100% auto;
+  margin-top: -10px;
+  height: 485px;
 }
 
 .hero-picture {
-  display: block;
-  margin: 0 auto;
+  margin: 45px auto;
 }
 /*Блок преимуществ*/
 
 .advantages-container {
   width: 651px;
-  margin: 0 auto;
+  margin: 69px auto;
 }
-
 .title {
   font-weight: 700;
   font-size: 30px;
@@ -146,64 +147,59 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
-
 .subtitle {
   font-size: 22px;
   line-height: 26px;
 }
-
 .heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-
-}.features-container {
-  display: flex;
-  flex-direction: column;
 }
-
-.features-item-primary {
-  background-color: #82B3D3;
-  color: #FFFFFF;
-  width: 1200px;
-  display: flex;
-}
-
-.features-item-secondary {
-  background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
-}
-
-.features-item-background {
-  background-color: rgba(131, 179, 211, 0.2);
-  width: 400px;
-}
-
 .advantages-features-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  width: 1200px;
 }
-
+.features-item-primary {
+  background-color: #82b3d3;
+  display: flex;
+  width: 1200px;
+}
+.features-item-secondary {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+}
+.features-item-background {
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+}
 .features-image {
   max-width: 100%;
-  display: block;
+}
+.features-container {
+  width: 230px;
+  margin: 102px 85px;
+}
+.heading-white {
+  color: #ffffff;
 }
 
 /*promo блок*/
 
 .promo-container {
-  margin: 0 auto;
+  margin: 64px auto;
   width: 505px;
 }
 
 .services-item-accommodation {
-  background: rgba(131, 179, 211, 0.12) url("../images/icons/services-housing-icon.svg") no-repeat 50% 50%;
+  background: rgba(131, 179, 211, 0.12)
+    url("../images/icons/services-housing-icon.svg") no-repeat 50% 50%;
   background-size: 75px 72px;
 }
 
@@ -213,7 +209,8 @@ body {
 }
 
 .services-item-souvenirs {
-  background: rgba(131, 179, 211, 0.12) url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 50%;
+  background: rgba(131, 179, 211, 0.12)
+    url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 50%;
   background-size: 75px 72px;
 }
 
@@ -228,24 +225,29 @@ body {
 .services-item {
   width: 400px;
 }
+.services-container {
+  margin: 183px 85px 81px;
+  width: 230px;
+}
 
 /*Блок поиска*/
 
 .search {
-  margin: 0 auto;
+  margin: 96px auto;
   width: 592px;
 }
 
 /*Блок подписки*/
 
 .subscribe-picture {
-  background: #756157 url("../images/pictures/subscribe-background-picture.jpg") no-repeat;
+  background: #756157 url("../images/pictures/subscribe-background-picture.jpg")
+    no-repeat;
   background-size: 100% auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscribe-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscribe-container {
@@ -270,11 +272,11 @@ body {
 }
 
 .contacts-phone {
-font-size: 40px;
-line-height: 40px;
-color: #000000;
-text-transform: uppercase;
-text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .social-list {
@@ -284,9 +286,10 @@ text-decoration: none;
 /*catalog*/
 
 .catalog-container {
-  background: #756157 url("../images/pictures/catalog-background-picture.png") no-repeat;
+  background: #756157 url("../images/pictures/catalog-background-picture.png")
+    no-repeat;
   background-size: 100% auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-header-title {
@@ -297,7 +300,7 @@ text-decoration: none;
 
 .breadcrumbs-icon {
   background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat;
-    background-size: 13px 15px;
+  background-size: 13px 15px;
 }
 
 .breadcrumbs-arrow {
@@ -357,7 +360,7 @@ text-decoration: none;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /*Пагинация*/
@@ -367,8 +370,8 @@ text-decoration: none;
 }
 
 .pagination-link {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -377,12 +380,12 @@ text-decoration: none;
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-more {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 22px;
   line-height: 26px;
 }
