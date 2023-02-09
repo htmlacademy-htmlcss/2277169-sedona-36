@@ -116,7 +116,7 @@ body {
 }
 
 .navigation-user {
-  max-width: 300px;
+  max-width: 310px;
   margin-left: auto;
 }
 
@@ -129,7 +129,7 @@ body {
   background-position: bottom, center;
   background-color: #756157;
   background-size: 100% auto;
-  margin-top: -10px;
+  margin-top: -6px;
   height: 485px;
 }
 
