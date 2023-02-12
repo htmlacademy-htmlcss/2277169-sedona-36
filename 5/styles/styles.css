@@ -20,14 +20,12 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -38,6 +36,11 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0 40px;
+  background-color: #ffffff;
 }
 
 .button {
@@ -48,6 +51,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.button-header {
+  padding: 8px 34px;
+}
+.search-button {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+}
+.subscribe-button {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .button-brown {
@@ -57,11 +76,25 @@ body {
 .button-blue {
   background: #82b3d3;
 }
-
-.button-green {
-  background: #7db54f;
+.button-filter {
+  padding: 8px 50px;
+}
+.button-card {
+  padding: 8px 20px;
 }
 
+.button-current {
+  background: #7db54f;
+  padding: 8px 18px;
+}
+.button-reset {
+  background-color: transparent;
+}
+
+.button-more {
+  padding: 8px 26px;
+  display: inline-block;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,38 +117,68 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 20px 16px;
+}
+
+.navigation-user-link {
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  display: block;
+  padding: 22px 12px;
 }
 
 .link-search {
   background: url("../images/icons/search-icon.svg") no-repeat;
   background-size: 20px 20px;
+  background-position: 50% 50%;
 }
 
 .link-heart {
   background: url("../images/icons/heart-icon.svg") no-repeat;
   background-size: 20px 20px;
+  background-position: 50% 50%;
+  margin-right: 20px;
 }
 
 .navigation-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 400px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
+  justify-content: space-between;
+  width: 1060px;
   margin: 0 auto;
+  height: 64px;
 }
 
 .navigation-logo {
-  margin-left: 70px;
+  margin-right: 28px;
+  width: 140px;
+  position: relative;
 }
 
 .navigation-user {
-  max-width: 300px;
+  max-width: 310px;
   margin-left: auto;
+  align-items: center;
+}
+.navigation-number {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  display: block;
+  background-color: #7db54f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 /*hero блок*/
@@ -127,8 +190,8 @@ body {
   background-position: bottom, center;
   background-color: #756157;
   background-size: 100% auto;
-  margin-top: -10px;
   height: 485px;
+  width: 1200px;
 }
 
 .hero-picture {
@@ -138,7 +201,8 @@ body {
 
 .advantages-container {
   width: 651px;
-  margin: 69px auto;
+  margin: 0 auto;
+  padding: 69px 290px;
 }
 .title {
   font-weight: 700;
@@ -147,45 +211,90 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+.advantages-title {
+  margin-bottom: 25px;
+}
+
+.features-title,
+.features-title-more,
+.features-description {
+  margin: 0;
+}
+
+.features-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 30px auto;
+  display: block;
+}
+
+.features-title-more::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  display: block;
+}
+
 .subtitle {
   font-size: 22px;
   line-height: 26px;
 }
+
 .heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  width: 175px;
+  margin: 0 auto;
 }
+
 .advantages-features-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
 }
+
 .features-item-primary {
   background-color: #82b3d3;
   display: flex;
   width: 1200px;
+  color: #ffffff;
+  height: 385px;
 }
+
 .features-item-secondary {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
+
 .features-item-background {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
 }
+
+.features-wrapper {
+  padding: 112.5px 85px;
+  width: 230px;
+}
+
 .features-image {
   max-width: 100%;
 }
+
 .features-container {
   width: 230px;
-  margin: 102px 85px;
+  padding: 102px 85px;
 }
+
 .heading-white {
   color: #ffffff;
 }
@@ -193,29 +302,39 @@ body {
 /*promo блок*/
 
 .promo-container {
-  margin: 64px auto;
+  margin: 0 auto;
+  padding: 64px 347.5px;
   width: 505px;
+}
+
+.promo-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.promo-subtitle {
+  margin: 0;
 }
 
 .services-item-accommodation {
   background: rgba(131, 179, 211, 0.12)
-    url("../images/icons/services-housing-icon.svg") no-repeat 50% 50%;
+    url("../images/icons/services-housing-icon.svg") no-repeat 50% 20%;
   background-size: 75px 72px;
 }
 
 .services-item-food {
-  background: url("../images/icons/services-food-icon.svg") no-repeat 50% 50%;
+  background: url("../images/icons/services-food-icon.svg") no-repeat 50% 20%;
   background-size: 75px 72px;
 }
 
 .services-item-souvenirs {
   background: rgba(131, 179, 211, 0.12)
-    url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 50%;
+    url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 20%;
   background-size: 75px 72px;
 }
 
 .services-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -226,15 +345,26 @@ body {
   width: 400px;
 }
 .services-container {
-  margin: 183px 85px 81px;
+  padding: 183px 85px 81px;
   width: 230px;
+}
+
+.services-heading {
+  margin-bottom: 30px;
 }
 
 /*Блок поиска*/
 
 .search {
-  margin: 96px auto;
+  padding: 96px 304px 104px;
   width: 592px;
+}
+
+.search-description {
+  margin-top: 20px;
+  margin-bottom: 62px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /*Блок подписки*/
@@ -244,31 +374,86 @@ body {
     no-repeat;
   background-size: 100% auto;
   color: #ffffff;
+  padding: 96px 258px 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subscribe-title {
   color: #ffffff;
+  margin: 0;
 }
-
+.subscribe-description {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
 .subscribe-container {
-  margin: 0 auto;
-  width: 684px;
+  margin: 0;
+  padding: 14px;
+  padding-left: 20px;
+  padding-right: 345px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+}
+.subscribe-field {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 87px;
+  height: 24px;
+  border: 0;
+  background-color: #f2f2f2;
+  padding: 0;
+  color: #000000;
 }
 
 /*footer*/
 
 .page-footer-container {
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
   display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  display: block;
+  width: 47.33px;
+  height: 40px;
+}
+.social-item-vk {
+  background-image: url("../images/icons/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 24px 14px;
+}
+.social-item-telegram {
+  background-image: url("../images/icons/telegram-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 18px 16px;
+}
+.social-item-youtube {
+  background-image: url("../images/icons/youtube-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 22px 17px;
 }
 
 .footer-social {
-  width: 142px;
+  max-width: 190px;
 }
 
 .footer-contacts {
-  width: 700px;
+  width: 331px;
 }
 
 .contacts-phone {
@@ -280,18 +465,25 @@ body {
 }
 
 .social-list {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /*catalog*/
 
-.catalog-container {
+.catalog-filter {
   background: #756157 url("../images/pictures/catalog-background-picture.png")
     no-repeat;
   background-size: 100% auto;
   color: #ffffff;
 }
-
+.catalog-filter-form {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
 .main-header-title {
   font-size: 60px;
   line-height: 78px;
@@ -309,7 +501,7 @@ body {
 }
 
 .breadcrumbs-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -317,7 +509,7 @@ body {
 }
 
 .filter-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .filter-title {
@@ -331,10 +523,43 @@ body {
   line-height: 23px;
 }
 
+.assortment {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
+}
+.assortment-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+.search-results {
+  margin-right: 200px;
+}
+
+.hotels-filter {
+  margin-left: auto;
+}
+
 /*Блок карточек отелей*/
 
 .hotels-card-list {
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 20px;
+}
+.hotels-card-box {
+  padding: 20px;
+  padding-bottom: 0;
+  width: 300px;
+}
+.card-wrapper {
+  display: flex;
 }
 
 .card-title {
@@ -342,6 +567,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  text-align: left;
 }
 
 .card-link {
@@ -350,10 +576,17 @@ body {
 
 .card-type {
   text-align: left;
+  display: inline-block;
+  width: 140px;
+  margin-right: 20px;
 }
 
 .card-price {
   text-align: right;
+  display: inline-block;
+  width: 140px;
+
+  margin: 0;
 }
 
 .card-description {
@@ -361,31 +594,55 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  width: 140px;
+  height: 37px;
 }
 
 /*Пагинация*/
 
 .pagination-list {
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+.pagination-item {
+  background-color: #82b3d3;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+.pagination-last-item {
+  margin-right: 0;
 }
 
 .pagination-link {
-  color: #ffffff;
-  background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-decoration: none;
+  color: #ffffff;
+  padding: 12px 24px;
+  display: block;
+}
+.pagination-last-link {
+  padding: 12px 18.5px;
 }
 
 .pagination-current {
-  color: #000000;
   background-color: #f2f2f2;
 }
 
-.pagination-more {
+.pagination-current .pagination-link {
   color: #000000;
+}
+
+.pagination-points {
   background-color: #ffffff;
+}
+.pagination-link-points {
+  padding: 17px 21.5px;
+  color: #000000;
   font-size: 22px;
   line-height: 26px;
 }
