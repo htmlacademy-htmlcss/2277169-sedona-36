@@ -27,19 +27,19 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link link-search" href="#">
+            <li class="navigation-item link-search">
+              <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link-heart" href="#">
+            <li class="navigation-item link-heart">
+              <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigation-number">12</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button button-brown" href="#">Хочу сюда</a>
+              <a class="button button-header button-brown" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -74,32 +74,38 @@
                 height="385" alt="Инфраструктура курорта">
             </li>
             <li class="features-item features-item-secondary">
-              <h3 class="heading">Небольшая площадь</h3>
-              <p class="features-description">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="features-wrapper">
+                <h3 class="heading">Небольшая площадь</h3>
+                <p class="features-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-background">
-              <h3 class="heading">Красивая дорога</h3>
-              <p class="features-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="features-wrapper">
+                <h3 class="heading">Красивая дорога</h3>
+                <p class="features-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-secondary">
-              <h3 class="heading">Мало туристов</h3>
-              <p class="features-description">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
+              <div class="features-wrapper">
+                <h3 class="heading">Мало туристов</h3>
+                <p class="features-description">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-primary">
+              <img class="features-image" src="images/pictures/advantages-the-mountains-picture.jpg" width="800"
+                height="385" alt="Мост дьявола в горах">
               <div class="features-container">
                 <h3 class="heading heading-white">Там есть мост дьявола</h3>
                 <p class="features-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img class="features-image" src="images/pictures/advantages-the-mountains-picture.jpg" width="800"
-                height="385" alt="Мост дьявола в горах">
             </li>
           </ul>
         </section>
@@ -148,27 +154,25 @@
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <a class="search-button button-brown button" href="#">
+          <a class="button button-brown search-button" href="#">
             <span class="button-search-hotels">поиск гостиницы в</span> седоне
           </a>
         </section>
         <article class="subscribe-picture" data-test="subscribe">
-          <div class="subscribe-container">
-            <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description subtitle">
-              Только полезная информация и никакого спама, честное бойскаутское!
+          <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description subtitle">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-container">
+              <label class="visually-hidden" for="subscribe-email">Email</label>
+              <input class="subscribe-field" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail"
+                required>
             </p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="subscribe-container">
-                <label class="visually-hidden" for="subscribe-email">Email</label>
-                <input class="subscribe-field" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail"
-                  required>
-              </p>
-              <button class="button button-subscribe button-blue" type="submit">
-                Подписаться
-              </button>
-            </form>
-          </div>
+            <button class="button button-blue subscribe-button" type="submit">
+              Подписаться
+            </button>
+          </form>
         </article>
       </main>
       <footer class="page-footer" data-test="footer">
@@ -176,17 +180,17 @@
           <section class="footer-social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social-list">
-              <li class="social-item">
+              <li class="social-item social-item-vk">
                 <a class="social-link" href="https://vk.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">Vkontakte</span>
                 </a>
               </li>
-              <li class="social-item">
+              <li class="social-item social-item-telegram">
                 <a class="social-link" href="https://t.me/htmlacademy" target="_blank">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
-              <li class="social-item">
+              <li class="social-item social-item-youtube">
                 <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                   <span class="visually-hidden">Youtube</span>
                 </a>
@@ -196,11 +200,11 @@
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <a class="contacts-link" target="_blank" href="https://htmlacademy.ru/">
-              <img class="contacts-logo" src="images/icons/logo-html-academy-icon.svg" width="115" height="33"
-                alt="Логотип html academy">
-            </a>
           </section>
+          <a class="contacts-link" target="_blank" href="https://htmlacademy.ru/">
+            <img class="contacts-logo" src="images/icons/logo-html-academy-icon.svg" width="115" height="33"
+              alt="Логотип html academy">
+          </a>
         </div>
       </footer>
     </div>
