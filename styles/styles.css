@@ -515,28 +515,44 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 70px;
+  margin-bottom: 8px;
 }
+
+/*Хлебные крошки*/
 
 .breadcrumbs-icon {
   background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat;
   background-size: 13px 15px;
 }
 
-.breadcrumbs-arrow {
-  background: url("../images/icons/breadcrumbs-arrow-icon.svg") no-repeat;
-  background-size: 8px 19.94px;
-}
-
 .breadcrumbs-list {
   list-style-type: none;
+  padding-left: 70px;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
+  display: block;
+  width: 13px;
+  height: 15px;
 }
+
+/*Форма с фильтрами*/
 
 .filter-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .filter-title {
@@ -544,11 +560,36 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 32px;
+  margin-right: 70px;
+  display: block;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .filter-subtitle {
   line-height: 23px;
 }
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-form-wrapper {
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+/*Шапка карточек отелей*/
 
 .assortment {
   display: flex;
@@ -558,15 +599,50 @@ body {
 }
 .assortment-container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  min-height: 49px;
+  margin-bottom: 40px;
 }
 .search-results {
+  margin: 0;
   margin-right: 200px;
+  align-self: center;
 }
 
 .hotels-filter {
+  width: 292px;
+  padding-left: 20px;
+}
+
+.sorting-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   margin-left: auto;
+}
+
+.sorting-item-cards {
+  background: url(../images/icons/show-cards-icon.svg) no-repeat;
+  background-position: 50% 50%;
+}
+.sorting-item-slides {
+  background: url(../images/icons/show-slides-icon.svg) no-repeat;
+  background-position: 50% 50%;
+}
+.sorting-item-list {
+  background: url(../images/icons/show-list-icon.svg) no-repeat;
+  background-position: 50% 50%;
+}
+.sorting-tem-current {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.sorting-link {
+  display: block;
+  width: 16px;
+  height: 14px;
+  padding: 17px 16px;
 }
 
 /*Блок карточек отелей*/
