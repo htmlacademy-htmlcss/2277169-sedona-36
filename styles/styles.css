@@ -308,6 +308,7 @@ body {
 
 .features-image {
   max-width: 100%;
+  order: -1;
 }
 
 .heading-white {
@@ -572,12 +573,18 @@ body {
   border: 0;
 }
 
-.filter-item:not(:last-child) {
+.filter-item {
   margin-bottom: 16px;
+  display: flex;
+}
+.filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-subtitle {
   line-height: 23px;
+  order: 1;
+  display: flex;
 }
 .button-wrapper {
   display: flex;
