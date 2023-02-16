@@ -128,6 +128,7 @@ body {
 
 .page-header {
   background-color: #ffffff;
+  position: relative;
 }
 
 .navigation {
@@ -141,6 +142,7 @@ body {
 .navigation-list {
   list-style-type: none;
   margin: 0;
+  margin-left: 168px;
   padding: 0;
   max-width: 460px;
   display: flex;
@@ -188,9 +190,8 @@ body {
 }
 
 .navigation-logo {
-  margin-right: 28px;
   width: 140px;
-  position: relative;
+  position: absolute;
 }
 
 .navigation-number {
@@ -204,7 +205,6 @@ body {
   width: 11px;
   height: 10px;
   border-radius: 50%;
-  position: relative;
   color: #ffffff;
 }
 
@@ -821,9 +821,7 @@ body {
   color: #ffffff;
   padding: 12px 24px;
   display: block;
-}
-.pagination-last-link {
-  padding: 12px 19px;
+  min-width: 60px;
 }
 
 .pagination-current {
