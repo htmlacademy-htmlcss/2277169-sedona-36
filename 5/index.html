@@ -9,7 +9,7 @@
 </head>
 
   <body>
-    <div class="container">
+    <div class="container container-design">
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page">
@@ -56,15 +56,17 @@
         </section>
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages-title title">Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </p>
-          <p class="advantages-subtitle subtitle">
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-          </p>
+          <div class="advantages-container">
+            <p class="advantages-title title">Седона — небольшой городок в Аризоне, заслуживающий большего!
+            </p>
+            <p class="advantages-subtitle subtitle">
+              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+            </p>
+          </div>
           <ul class="advantages-features-list">
             <li class="features-item features-item-primary">
               <div class="advantages-wrapper">
-                <h3 class="heading heading-white features-title">Настоящий городок</h3>
+                <h3 class="heading features-title">Настоящий городок</h3>
                 <p class="features-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -90,9 +92,9 @@
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </li>
-            <li class="features-item features-item-primary">
+            <li class="features-item features-item-primary features-reverse">
               <div class="advantages-wrapper">
-                <h3 class="heading heading-white features-title">Там есть мост дьявола</h3>
+                <h3 class="heading features-title">Там есть мост дьявола</h3>
                 <p class="features-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -103,13 +105,15 @@
           </ul>
         </section>
         <section class="promo">
-          <h2 class="visually-hidden">Приглашаем Вас</h2>
-          <p class="promo-title title">
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
-          </p>
-          <p class="promo-subtitle subtitle">
-            Опытный персонал и качественное обслуживание!
-          </p>
+          <h2 class="visually-hidden">Услуги</h2>
+          <div class="promo-wrapper">
+            <p class="promo-title title">
+              Приезжайте в Седону отдохнуть в комфорте и уюте!
+            </p>
+            <p class="promo-subtitle subtitle">
+              Опытный персонал и качественное обслуживание!
+            </p>
+          </div>
           <ul class="services-list">
             <li class="services-item services-item-accommodation">
               <h3 class="services-heading heading">Жильё</h3>
@@ -134,16 +138,19 @@
         </section>
         <section class="search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <span class="search-description-title title">Заинтересовались?</span>
-          <p class="search-description">
-            Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
-            предложения гостиниц в Седоне
-          </p>
-          <a class="button button-brown search-button" href="#">
-            <span class="button-search-hotels">поиск гостиницы в седоне</span>
-          </a>
+          <div class="search-wrapper">
+            <span class="title search-title">Заинтересовались?</span>
+            <p class="search-description">
+              Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
+              предложения гостиниц в Седоне
+            </p>
+            <a class="button button-brown search-button" href="#">
+              <span class="button-search-hotels">поиск гостиницы в седоне</span>
+            </a>
+
+          </div>
         </section>
-        <article class="subscribe-picture" data-test="subscribe">
+        <article class="subscribe subscribe-picture" data-test="subscribe">
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description subtitle">
             Только полезная информация и никакого спама, <br>честное бойскаутское!
