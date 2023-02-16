@@ -63,16 +63,20 @@ body {
   border: none;
   border-radius: 4px;
   font-weight: 700;
+  display: block;
 }
 
 .button-header {
   padding: 8px 34px;
+  width: 160px;
 }
 
 .search-button {
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
+  width: 376px;
+  margin: 0 auto;
 }
 
 .subscribe-button {
