@@ -212,6 +212,9 @@ body {
   height: 10px;
   border-radius: 50%;
   color: #ffffff;
+  position: absolute;
+  top: 11px;
+  right: 254px;
 }
 
 /*hero блок*/
