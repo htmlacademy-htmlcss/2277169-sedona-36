@@ -38,6 +38,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -63,7 +64,8 @@ body {
   border: none;
   border-radius: 4px;
   font-weight: 700;
-  display: block;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .button-header {
@@ -94,8 +96,43 @@ body {
   background: #756157;
 }
 
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:active,
+.button-blue:active,
+.button-current:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-current {
+  background: #7db54f;
+  padding: 8px 18px;
+}
+
+.button-current:hover {
+  background-color: #6c9e42;
+}
+
+.button-current:focus {
+  background-color: #6c9e42;
+}
+
 .button-blue {
   background: #82b3d3;
+}
+
+.button-blue:hover {
+  background-color: #68a2ca;
+}
+
+.button-blue:focus {
+  background-color: #68a2ca;
 }
 
 .button-filter {
@@ -106,11 +143,6 @@ body {
   padding: 8px 20px;
 }
 
-.button-current {
-  background: #7db54f;
-  padding: 8px 18px;
-}
-
 .button-reset {
   background-color: transparent;
 }
@@ -119,6 +151,7 @@ body {
   padding: 8px 26px;
   grid-column: 1 / 2;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -175,6 +208,20 @@ body {
   box-sizing: content-box;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 16px;
+  right: 16px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-user-link {
   text-decoration: none;
   min-width: 20px;
@@ -198,6 +245,7 @@ body {
 .navigation-logo {
   width: 140px;
   position: absolute;
+  z-index: 1;
 }
 
 .navigation-number {
@@ -487,6 +535,7 @@ body {
   padding: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   width: 1200px;
   min-height: 120px;
@@ -509,12 +558,6 @@ body {
   box-sizing: content-box;
 }
 
-.social-link-vk {
-  min-width: 24px;
-  min-height: 14px;
-  padding: 13px 12px;
-}
-
 .social-link-telegram {
   min-width: 18px;
   min-height: 16px;
@@ -527,25 +570,19 @@ body {
   padding: 12px 13px;
 }
 
-.social-item-vk {
-  background-image: url("../images/icons/vk-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 24px 14px;
+.social-link-vk {
+  min-width: 24px;
+  min-height: 14px;
+  padding: 13px 12px;
 }
 
-.social-item-telegram {
-  background-image: url("../images/icons/telegram-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 18px 16px;
+.social-link:hover path,
+.social-link:focus {
+  fill: #68a2ca;
 }
 
-.social-item-youtube {
-  background-image: url("../images/icons/youtube-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 22px 17px;
+.social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -560,6 +597,23 @@ body {
   text-decoration: none;
 }
 
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.contacts-link:hover path,
+.contacts-link:focus path {
+  fill: #756157;
+}
+
+.contacts-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
+}
 /*catalog*/
 
 .catalog-filter {
@@ -591,6 +645,10 @@ body {
 .breadcrumbs-icon {
   background: url("../images/icons/breadcrumbs-home-icon.svg") no-repeat;
   background-size: 13px 15px;
+  display: block;
+  min-width: 13px;
+  min-height: 15px;
+  margin-right: auto;
 }
 
 .breadcrumbs-list {
@@ -600,7 +658,7 @@ body {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 10px;
 }
 
 .breadcrumbs-link {
@@ -608,6 +666,14 @@ body {
   display: block;
   width: 13px;
   height: 15px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  background-image: url(../images/icons/breadcrumbs-arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 20px;
+  background-position: center right;
+  padding-right: 22px;
 }
 
 /*Форма с фильтрами*/
@@ -683,8 +749,10 @@ body {
 }
 
 .hotels-filter {
-  width: 292px;
-  padding-left: 20px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  appearance: none;
 }
 
 .sorting-list {
@@ -710,7 +778,7 @@ body {
   background-position: 50% 50%;
 }
 
-.sorting-tem-current {
+.sorting-item-current {
   border: 2px solid #000000;
   border-radius: 4px;
 }
