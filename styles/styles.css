@@ -251,18 +251,6 @@ body {
   padding: 22px 12px;
 }
 
-.link-search {
-  background: url("../images/icons/search-icon.svg") no-repeat;
-  background-size: 20px 20px;
-  background-position: 50% 50%;
-}
-
-.link-heart {
-  background: url("../images/icons/heart-icon.svg") no-repeat;
-  background-size: 20px 20px;
-  background-position: 50% 50%;
-}
-
 .navigation-logo {
   width: 140px;
   position: absolute;
@@ -284,6 +272,9 @@ body {
   position: absolute;
   top: 11px;
   right: 254px;
+}
+.navigation-link:hover {
+  opacity: 0.3;
 }
 
 /*hero блок*/
@@ -697,6 +688,13 @@ body {
   padding-right: 22px;
 }
 
+.breadcrumbs:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 /*Форма с фильтрами*/
 
 .filter-list {
@@ -712,8 +710,6 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   text-align: left;
-  margin-bottom: 32px;
-  margin-right: 70px;
   display: block;
 }
 
@@ -815,21 +811,18 @@ body {
   background-position: 50% 50%;
 }
 
-.sorting-item {
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-}
-
 .sorting-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.sorting-item:hover,
-.sorting-item:active {
+.sorting-link:hover {
   border-color: #000000;
 }
-.sorting-item:focus {
+.sorting-link:focus {
   border-color: #68a2ca;
+}
+.sorting-link:active {
+  border-color: #000000;
 }
 .sorting-link {
   display: block;
@@ -837,6 +830,13 @@ body {
   height: 14px;
   padding: 17px 16px;
   box-sizing: content-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  outline: none;
+}
+
+.sorting-current {
+  border: 2px solid #000000;
 }
 
 /*Блок карточек отелей*/
@@ -1015,4 +1015,59 @@ body {
 .pagination-current:focus,
 .pagination-current:active {
   background: #f2f2f2;
+}
+
+/*Слайдер*/
+
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 32px;
+  width: 288px;
+  height: 160px;
+  position: relative;
+}
+
+.range-wrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.price-form {
+  width: 143px;
+  height: 48px;
+}
+.line {
+  width: 226px;
+  height: 0px;
+  border: 4px solid #ffffff;
+  position: relative;
+}
+
+.inner-line {
+  border: 4px solid #ffffff;
+  width: 287px;
+  opacity: 0.3;
+}
+
+.button-range {
+  width: 20px;
+  height: 20px;
+}
+
+.button-left {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0.5px;
+  top: 84px;
+}
+
+.button-right {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 207px;
+  top: 84px;
 }
