@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="navigation-item navigation-button">
-              <a class="button button-header button-brown" href="#">Хочу сюда!</a>
+              <a class="button button-header button-brown" href="#search">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -82,26 +82,32 @@
                 height="385" alt="Инфраструктура курорта">
             </li>
             <li class="features-item features-item-secondary">
-              <h3 class="heading features-title-more">Небольшая площадь</h3>
-              <p class="features-description">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="advantages-wrappers">
+                <h3 class="heading features-title-more">Небольшая площадь</h3>
+                <p class="features-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-background">
-              <h3 class="heading features-title-more">Красивая дорога</h3>
-              <p class="features-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="advantages-wrappers">
+                <h3 class="heading features-title-more">Красивая дорога</h3>
+                <p class="features-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-secondary">
-              <h3 class="heading features-title-more">Мало туристов</h3>
-              <p class="features-description">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
+              <div class="advantages-wrappers">
+                <h3 class="heading features-title-more">Мало туристов</h3>
+                <p class="features-description">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
             <li class="features-item features-item-primary features-reverse">
               <div class="advantages-wrapper">
-                <h3 class="heading features-title">Там есть мост дьявола</h3>
+                <h3 class="heading features-title">Там есть <br>мост дьявола</h3>
                 <p class="features-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -125,25 +131,25 @@
             <li class="services-item services-item-accommodation">
               <h3 class="services-heading heading">Жильё</h3>
               <p class="services-descrition">
-                Рекомендуем пожить <br>в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
               </p>
             </li>
             <li class="services-item services-item-food">
               <h3 class="services-heading heading">Еда</h3>
               <p class="services-descrition">
-                Всегда заказывайте <br>топовый фирменный бургер, вы не
+                Всегда заказывайте<br> топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="services-item services-item-souvenirs">
               <h3 class="services-heading heading">Сувениры</h3>
               <p class="services-descrition">
-                Не только китайского, <br>но и настоящего местного производства!
+                Не только китайского,<br> но и настоящего местного производства!
               </p>
             </li>
           </ul>
         </section>
-        <section class="search" data-test="search">
+        <section class="search" data-test="search" id="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <div class="search-wrapper">
             <span class="title search-title">Заинтересовались?</span>
@@ -221,7 +227,7 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -238,24 +244,32 @@
                 <input class="auth-form-field field" type="text" id="auth-arrival" name="auth-arrival"
                   placeholder="27 апреля 2020">
               </p>
-              <span class="modal-description">Мы не можем отправить вас в прошлое.</span>
+              <p class="modal-description error">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
                 <label class="modal-subtitle" for="auth-departure">Дата выезда:</label>
                 <input class="auth-form-field field" type="text" id="auth-departure" name="auth-departure"
                   placeholder="1 сентября 2021">
               </p>
-              <span class="modal-description">На эти даты есть свободные номера. Пока есть.</span>
+              <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
               <div class="modal-wrapper">
-                <p class="field-group">
+                <div class="field-group-more">
                   <label class="modal-subtitle" for="auth-adults">Взрослые:</label>
-                  <input class="auth-form-field form-guests" type="number" id="auth-adults" name="auth-adults"
-                    placeholder="2">
-                </p>
-                <p class="field-group">
+                  <div class="modal-form-wrapper">
+                    <button class="click-modal-button"></button>
+                    <input class="auth-form-field form-guests" type="text" id="auth-adults" name="auth-adults"
+                      placeholder="2">
+                    <button class="click-modal-button-plus"></button>
+                  </div>
+                </div>
+                <div class="field-group more">
                   <label class="modal-subtitle" for="auth-children">Дети:</label>
-                  <input class="auth-form-field form-guests" type="number" id="auth-children" name="auth-children"
-                    placeholder="2">
-                </p>
+                  <div class="modal-form-wrapper">
+                    <button class="click-modal-button"></button>
+                    <input class="auth-form-field form-guests" type="text" id="auth-adults" name="auth-adults"
+                      placeholder="2">
+                    <button class="click-modal-button-plus"></button>
+                  </div>
+                </div>
               </div>
               <a class="button button-blue modal-button" href="#">Найти</a>
             </form>
