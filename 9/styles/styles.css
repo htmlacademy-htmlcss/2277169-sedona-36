@@ -38,7 +38,7 @@ body {
 
 .main-container {
   flex-grow: 1;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -188,6 +188,7 @@ body {
 
 .page-header {
   background-color: #ffffff;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -232,7 +233,7 @@ body {
 
 .navigation-link-current::after {
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   height: 2px;
   left: 16px;
   right: 16px;
@@ -253,7 +254,6 @@ body {
 .navigation-logo {
   width: 140px;
   position: absolute;
-  z-index: 1;
 }
 
 .navigation-number {
@@ -269,8 +269,8 @@ body {
   border-radius: 50%;
   color: #ffffff;
   position: absolute;
-  top: 6px;
-  right: 3px;
+  top: 10px;
+  right: 5px;
 }
 
 /*hero блок*/
@@ -307,6 +307,10 @@ body {
 .advantages-wrapper {
   padding-left: 85px;
   padding-right: 85px;
+  margin-top: 20px;
+}
+.advantages-wrappers {
+  margin-top: 20px;
 }
 
 .features-item {
@@ -384,6 +388,7 @@ body {
   color: #000000;
   width: 175px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .advantages-features-list {
@@ -424,18 +429,18 @@ body {
 
 .services-item-accommodation {
   background: rgba(131, 179, 211, 0.12)
-    url("../images/icons/services-housing-icon.svg") no-repeat 50% 20%;
+    url("../images/icons/services-housing-icon.svg") no-repeat 50% 25%;
   background-size: 75px 72px;
 }
 
 .services-item-food {
-  background: url("../images/icons/services-food-icon.svg") no-repeat 50% 20%;
+  background: url("../images/icons/services-food-icon.svg") no-repeat 50% 25%;
   background-size: 75px 72px;
 }
 
 .services-item-souvenirs {
   background: rgba(131, 179, 211, 0.12)
-    url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 20%;
+    url("../images/icons/services-souvenirs-icon.svg") no-repeat 50% 25%;
   background-size: 75px 72px;
 }
 
@@ -527,14 +532,12 @@ body {
   line-height: 24px;
   min-width: 87px;
   min-height: 24px;
-  border: none;
   background-color: #f2f2f2;
   color: #000000;
   width: 452px;
-  padding: 14px;
-  padding-left: 20px;
-  padding-right: 345px;
+  padding: 11px 20px;
   border-radius: 4px 0 0 4px;
+  border: 3px solid transparent;
 }
 
 .subscribe-field:hover {
@@ -544,7 +547,7 @@ body {
 .subscribe-field:focus {
   background: #e6e6e6;
   border: 3px solid #83b3d3;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe-field:active {
@@ -563,6 +566,7 @@ body {
   background-color: #ffffff;
   width: 1200px;
   min-height: 120px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social {
@@ -645,14 +649,8 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.contacts-phone:disabled,
-.navigation-link:disabled,
 .button-reset:disabled,
-.filter-form:disabled,
-.breadcrumbs:disabled,
-.social-link:disabled path,
-.contacts-phone:disabled path,
-.navigation-link:disabled path {
+.filter-form:disabled {
   opacity: 0.1;
 }
 /*catalog*/
@@ -662,6 +660,7 @@ body {
     no-repeat;
   background-size: 100% auto;
   color: #ffffff;
+  min-height: 412px;
 }
 .catalog-filter-form {
   display: flex;
@@ -693,13 +692,14 @@ body {
   min-width: 13px;
   min-height: 15px;
   margin-right: auto;
+  padding-top: 2px;
 }
 
 .breadcrumbs-list {
   list-style-type: none;
   padding-left: 70px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -717,19 +717,27 @@ body {
   background-repeat: no-repeat;
   background-size: 8px 20px;
   background-position: center right;
-  padding-right: 22px;
+  padding-right: 19px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
 }
 
 .breadcrumbs:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-icon:hover path {
-  fill: rgba(255, 255, 255, 0.6);
+.breadcrumbs:focus {
+  color: #ffffff;
 }
 
 .breadcrumbs:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-icon:hover path {
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-icon:active path {
@@ -745,7 +753,7 @@ body {
 }
 
 .filter-item {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   display: flex;
 }
 
@@ -800,16 +808,21 @@ body {
   background: #ffffff;
   border-radius: 4px;
 }
+
 .filter-form[type="radio"] + .control-mark {
   border-radius: 20px;
 }
+
 .filter-subtitle:hover {
   opacity: 0.6;
 }
-.filter-subtitle:focus {
+
+.filter-form[type="checkbox"]:checked + .control-mark:focus,
+.filter-form[type="checkbox"]:checked + .control-mark:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
 }
+
 .filter-subtitle:active,
 .card-link:active {
   opacity: 0.3;
@@ -840,6 +853,9 @@ body {
   left: 5px;
 }
 
+.control-label {
+}
+
 /*Шапка карточек отелей*/
 
 .assortment {
@@ -852,19 +868,21 @@ body {
 }
 
 .assortment-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 338px 422px 160px;
   width: 1200px;
   padding: 0 70px;
   min-height: 49px;
   margin-bottom: 40px;
+  gap: 70px;
 }
 .search-results {
   margin: 0;
-  margin-right: 200px;
   align-self: center;
 }
 
 .hotels-filter {
+  margin-left: auto;
   width: 292px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -874,15 +892,20 @@ body {
   background-image: url("../images/icons/select-arrow-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .hotels-filter:hover,
 .hotels-filter:focus {
   border-color: #68a2ca;
 }
+
 .hotels-filter:active {
   border-color: #3f5e72;
 }
+
 .hotels-filter:disabled {
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -892,7 +915,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: auto;
 }
 
 .sorting-item-cards {
@@ -927,7 +949,7 @@ body {
   display: block;
   width: 16px;
   height: 14px;
-  padding: 17px 16px;
+  padding: 15px 14px;
   box-sizing: content-box;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -958,7 +980,7 @@ body {
   border: 1px solid #e6e6e6;
   transform: rotate(180deg);
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   display: block;
 }
 
@@ -1073,7 +1095,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
-  padding: 12px 24px;
+  padding: 12px 0;
   display: block;
   min-width: 60px;
 }
@@ -1139,11 +1161,11 @@ body {
   height: 48px;
   border: none;
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   padding: 12px 20px;
-  vertical-align: center;
 }
 
 .range-lable {
@@ -1270,6 +1292,7 @@ body {
 
 .modal-title {
   margin: 0;
+  width: 520px;
   text-align: left;
   margin-bottom: 64px;
   font-family: "PT Sans", sans-serif;
@@ -1296,19 +1319,8 @@ body {
   background: #f2f2f2;
   border-radius: 4px;
   border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 12px 20px;
   width: 440px;
-}
-
-.auth-form-field::placeholder {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
 }
 
 .field-group {
@@ -1320,52 +1332,106 @@ body {
   gap: 18px;
   margin-bottom: 4px;
 }
+
 .modal-description {
   font-size: 16px;
+  margin: 0;
   margin-bottom: 23px;
   display: block;
   padding-left: 157px;
   text-align: left;
 }
 
-.modal-button {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+.error {
+  color: #ff5757;
+}
+
+.modal-form-wrapper {
+  position: relative;
+}
+
+.click-modal-button {
+  position: absolute;
+  padding: 9px 3px;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.click-modal-button-plus {
+  position: absolute;
+  padding: 9px 3px;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.click-modal-button::after {
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  background-position: center;
   display: block;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+}
+.click-modal-button-plus::before {
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  background-position: center;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 9px;
+}
+
+.click-modal-button-plus::after {
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  background-position: center;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 9px;
 }
 
 .modal-wrapper {
-  display: grid;
-  grid-template-columns: 247px 242px;
+  display: flex;
   margin-bottom: 44px;
-  gap: 88px;
+  justify-content: space-between;
 }
 
 .form-guests {
   width: 110px;
-  padding: 14px 40px;
-}
-
-.form-guests::placeholder {
+  min-height: 48px;
   padding: 14px 10px;
+  padding-left: 40px;
+  padding-right: 39px;
+  text-align: center;
 }
 
-.form-guests::before {
-  content: "";
-  width: 2px;
-  height: 14px;
-  background-color: rgba(117, 97, 87, 0.3);
-  background-size: 2px 14px;
-  background-position: center;
-  transform: rotate(-90deg);
-  display: block;
+.field-group-more {
+  display: flex;
+  gap: 46px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
