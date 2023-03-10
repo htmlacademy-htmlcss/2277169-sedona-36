@@ -241,13 +241,13 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
-                <label class="modal-subtitle" for="auth-arrival">Дата заезда:</label>
+                <label class="modal-subtitle" for="auth-arrival">Дата Заезда:</label>
                 <input class="auth-form-field field" type="text" id="auth-arrival" name="auth-arrival"
                   placeholder="27 апреля 2020">
               </p>
               <p class="modal-description error">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
-                <label class="modal-subtitle" for="auth-departure">Дата выезда:</label>
+                <label class="modal-subtitle" for="auth-departure">Дата Выезда:</label>
                 <input class="auth-form-field field" type="text" id="auth-departure" name="auth-departure"
                   placeholder="1 сентября 2021">
               </p>
@@ -262,8 +262,29 @@
                     <button class="click-modal-button-plus"></button>
                   </div>
                 </div>
-                <div class="field-group more">
-                  <label class="modal-subtitle" for="auth-children">Дети:</label>
+                <div class="field-group-more">
+                  <div class="modal-subtitle modal-overflow">
+                    <label class="modal-subtitle" for="auth-children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"
+                          viewBox="0 0 2 12">
+                          <path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                        которые будут с вами, возраст
+                        которых
+                        от 6
+                        до
+                        18 лет. Дети до 6 лет размещаются бесплатно.
+                        <svg class="tooltip-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="9" fill="none"
+                          viewBox="0 0 19 9">
+                          <path fill="#333" d="M9.5 0 19 9H0l9.5-9Z" />
+                        </svg>
+                      </span>
+                    </span>
+                  </div>
                   <div class="modal-form-wrapper">
                     <button class="click-modal-button"></button>
                     <input class="auth-form-field form-guests" type="text" id="auth-adults" name="auth-adults"
