@@ -658,7 +658,7 @@ body {
 .catalog-filter {
   background: #756157 url("../images/pictures/catalog-background-picture.png")
     no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
   min-height: 412px;
 }
@@ -1199,6 +1199,7 @@ body {
   height: 4px;
   background-color: #ffffff;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .range-bar {
   position: absolute;
@@ -1275,8 +1276,6 @@ body {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
-.modal-auth {
-}
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1309,6 +1308,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  position: relative;
+}
+
+.modal-overflow {
+  margin-right: 38px;
+  position: relative;
 }
 
 .auth-form {
@@ -1321,6 +1326,10 @@ body {
   border: none;
   padding: 12px 20px;
   width: 440px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .field-group {
@@ -1336,7 +1345,7 @@ body {
 .modal-description {
   font-size: 16px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   display: block;
   padding-left: 157px;
   text-align: left;
@@ -1355,7 +1364,7 @@ body {
   padding: 9px 3px;
   width: 20px;
   height: 20px;
-  top: 14px;
+  top: 17px;
   left: 10px;
   cursor: pointer;
   border: none;
@@ -1366,7 +1375,7 @@ body {
   padding: 9px 3px;
   width: 20px;
   height: 20px;
-  top: 14px;
+  top: 17px;
   right: 10px;
   cursor: pointer;
   border: none;
@@ -1430,8 +1439,78 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+.modal-button {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 0;
+  min-height: 60px;
+}
+
+/*
 .modal-container-close {
   display: none;
+}
+*/
+
+/*Tooltip*/
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 26px;
+  height: 26px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  padding: 7px 12px;
+  position: absolute;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: absolute;
+  top: 42px;
+  transform: translateX(-50%);
+  left: 15px;
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: -9px;
+  left: 117px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
