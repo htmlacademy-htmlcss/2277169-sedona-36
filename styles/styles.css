@@ -854,9 +854,6 @@ body {
   left: 5px;
 }
 
-.control-label {
-}
-
 /*Шапка карточек отелей*/
 
 .assortment {
@@ -1245,16 +1242,16 @@ body {
 }
 
 .range-toggle:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
   border: 3px solid #83b3d3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 .range-toggle:active {
   border: 2px solid #83b3d3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 /*Модальное окно*/
@@ -1274,7 +1271,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background: #ffffff;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 .modal-close-button {
@@ -1288,6 +1285,23 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.1;
 }
 
 .modal-title {
@@ -1360,68 +1374,28 @@ body {
   position: relative;
 }
 
-.click-modal-button {
-  position: absolute;
-  padding: 9px 3px;
+.modal-button {
+  padding: 0;
+  margin: 0;
+  border: 0;
   width: 20px;
   height: 20px;
-  top: 17px;
+  position: absolute;
+  top: 19px;
+  cursor: pointer;
+}
+
+.modal-button-minus {
   left: 10px;
-  cursor: pointer;
-  border: none;
 }
 
-.click-modal-button-plus {
-  position: absolute;
-  padding: 9px 3px;
-  width: 20px;
-  height: 20px;
-  top: 17px;
-  right: 10px;
-  cursor: pointer;
-  border: none;
-}
-
-.click-modal-button::after {
-  width: 2px;
-  height: 14px;
-  background-color: rgba(117, 97, 87, 0.3);
-  transform: rotate(-90deg);
-  background-position: center;
-  display: block;
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 9px;
-}
-.click-modal-button-plus::before {
-  width: 2px;
-  height: 14px;
-  background-color: rgba(117, 97, 87, 0.3);
-  transform: rotate(-90deg);
-  background-position: center;
-  display: block;
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: 9px;
-}
-
-.click-modal-button-plus::after {
-  width: 2px;
-  height: 14px;
-  background-color: rgba(117, 97, 87, 0.3);
-  background-position: center;
-  display: block;
-  content: "";
-  position: absolute;
-  top: 3px;
+.modal-button-plus {
   right: 9px;
 }
 
 .modal-wrapper {
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 48px;
   justify-content: space-between;
 }
 
@@ -1443,7 +1417,7 @@ body {
   flex-wrap: wrap;
 }
 
-.modal-button {
+.modal-button-search {
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -1451,6 +1425,18 @@ body {
   min-height: 60px;
 }
 
+.modal-button-date {
+  position: absolute;
+  right: 90px;
+  background-image: url("../images/icons/date-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+/*
 .modal-container-close {
   display: none;
 }

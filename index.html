@@ -244,22 +244,32 @@
                 <label class="modal-subtitle" for="auth-arrival">Дата Заезда:</label>
                 <input class="auth-form-field field" type="text" id="auth-arrival" name="auth-arrival"
                   placeholder="27 апреля 2020">
+                <button class="modal-button-date"></button>
               </p>
               <p class="modal-description error">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
                 <label class="modal-subtitle" for="auth-departure">Дата Выезда:</label>
                 <input class="auth-form-field field" type="text" id="auth-departure" name="auth-departure"
                   placeholder="1 сентября 2021">
+                <button class="modal-button-date"></button>
               </p>
               <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
               <div class="modal-wrapper">
                 <div class="field-group-more">
                   <label class="modal-subtitle" for="auth-adults">Взрослые:</label>
                   <div class="modal-form-wrapper">
-                    <button class="click-modal-button"></button>
+                    <button class="modal-button modal-button-minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                      </svg>
+                    </button>
                     <input class="auth-form-field form-guests" type="text" id="auth-adults" name="auth-adults"
                       placeholder="2">
-                    <button class="click-modal-button-plus"></button>
+                    <button class="modal-button modal-button-plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
                 <div class="field-group-more">
@@ -286,14 +296,22 @@
                     </span>
                   </div>
                   <div class="modal-form-wrapper">
-                    <button class="click-modal-button"></button>
+                    <button class="modal-button modal-button-minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
+                      </svg>
+                    </button>
                     <input class="auth-form-field form-guests" type="text" name="auth-children" placeholder="2"
                       id="auth-children">
-                    <button class="click-modal-button-plus"></button>
+                    <button class="modal-button modal-button-plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
-              <a class="button button-blue modal-button" href="#">Найти</a>
+              <a class="button button-blue modal-button-search" href="#">Найти</a>
             </form>
           </section>
         </div>
