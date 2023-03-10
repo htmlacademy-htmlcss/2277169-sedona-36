@@ -152,6 +152,7 @@ body {
 .button-reset {
   background-color: transparent;
   padding: 8px 57px;
+  border: 3px solid transparent;
 }
 
 .button-reset:hover {
@@ -786,11 +787,11 @@ body {
 .button-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  margin-top: 56px;
 }
 
 .catalog-form-wrapper {
-  padding-bottom: 70px;
+  padding-bottom: 65px;
 }
 
 .filter-subtitle {
@@ -1450,11 +1451,9 @@ body {
   min-height: 60px;
 }
 
-/*
 .modal-container-close {
   display: none;
 }
-*/
 
 /*Tooltip*/
 
