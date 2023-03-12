@@ -500,6 +500,7 @@ body {
   background-size: 100% auto;
   color: #ffffff;
 }
+
 .subscribe {
   padding: 96px 258px 104px;
   background-color: #ffffff;
@@ -515,16 +516,19 @@ body {
   margin: 0;
   margin-bottom: 54px;
 }
+
 .subscribe-form {
   display: flex;
   justify-content: center;
   width: 684px;
 }
+
 .subscribe-container {
   margin: 0;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
 }
+
 .subscribe-field {
   font-family: "PT Sans";
   font-style: normal;
@@ -874,6 +878,7 @@ body {
   margin-bottom: 40px;
   gap: 70px;
 }
+
 .search-results {
   margin: 0;
   align-self: center;
@@ -937,12 +942,15 @@ body {
 .sorting-link:hover {
   border-color: #000000;
 }
+
 .sorting-link:focus {
   border-color: #68a2ca;
 }
+
 .sorting-link:active {
   border-color: #000000;
 }
+
 .sorting-link {
   display: block;
   width: 16px;
@@ -1114,6 +1122,7 @@ body {
   margin-right: 8px;
   border-radius: 4px;
 }
+
 .pagination-link-points {
   padding: 17px 22px;
   color: #000000;
@@ -1199,12 +1208,14 @@ body {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .range-bar {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
   width: 226px;
 }
+
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -1249,6 +1260,7 @@ body {
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
+
 .range-toggle:active {
   border: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
