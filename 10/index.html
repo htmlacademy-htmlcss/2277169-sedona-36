@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <base href="https://htmlacademy-htmlcss.github.io/2277169-sedona-36/10/">
 </head>
 
@@ -231,7 +233,7 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21">
               <path fill="#000"
@@ -245,28 +247,28 @@
                 <label class="modal-subtitle" for="auth-arrival">Дата Заезда:</label>
                 <input class="auth-form-field" type="text" id="auth-arrival" name="auth-arrival"
                   placeholder="27 апреля 2020">
-                <button class="modal-button-date"></button>
+                <button class="modal-button-date" type="button"></button>
               </p>
               <p class="modal-description error">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
                 <label class="modal-subtitle" for="auth-departure">Дата Выезда:</label>
                 <input class="auth-form-field" type="text" id="auth-departure" name="auth-departure"
                   placeholder="1 сентября 2021">
-                <button class="modal-button-date"></button>
+                <button class="modal-button-date" type="button"></button>
               </p>
               <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
               <div class="modal-wrapper">
                 <div class="field-group-more">
                   <label class="modal-subtitle" for="auth-adults">Взрослые:</label>
                   <div class="modal-form-wrapper">
-                    <button class="modal-button modal-button-minus">
+                    <button class="modal-button modal-button-minus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
                     <input class="auth-form-field form-guests" type="text" id="auth-adults" name="auth-adults"
                       placeholder="2">
-                    <button class="modal-button modal-button-plus">
+                    <button class="modal-button modal-button-plus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                       </svg>
@@ -277,7 +279,7 @@
                   <div class="modal-subtitle modal-overflow">
                     <label class="modal-subtitle" for="auth-children">Дети:</label>
                     <span class="tooltip">
-                      <button class="tooltip-toggle" aria-labelledby="tooltip-label-date">
+                      <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
                         <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"
                           viewBox="0 0 2 12">
                           <path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd" />
@@ -297,14 +299,14 @@
                     </span>
                   </div>
                   <div class="modal-form-wrapper">
-                    <button class="modal-button modal-button-minus">
+                    <button class="modal-button modal-button-minus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
                     <input class="auth-form-field form-guests" type="text" name="auth-children" placeholder="2"
                       id="auth-children">
-                    <button class="modal-button modal-button-plus">
+                    <button class="modal-button modal-button-plus" type="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                       </svg>
