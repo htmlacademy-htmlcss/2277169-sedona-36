@@ -249,14 +249,14 @@
               <p class="field-group">
                 <label class="modal-subtitle" for="auth-arrival">Дата Заезда:</label>
                 <input class="auth-form-field" type="text" id="auth-arrival" name="auth-arrival"
-                  placeholder="27 апреля 2020">
+                  placeholder="27 апреля 2020" required>
                 <button class="modal-button-date" type="button"></button>
               </p>
               <p class="modal-description error">Мы не можем отправить вас в прошлое.</p>
               <p class="field-group">
                 <label class="modal-subtitle" for="auth-departure">Дата Выезда:</label>
                 <input class="auth-form-field" type="text" id="auth-departure" name="auth-departure"
-                  placeholder="1 сентября 2023">
+                  placeholder="1 сентября 2023" required>
                 <button class="modal-button-date" type="button"></button>
               </p>
               <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
@@ -270,7 +270,8 @@
                         <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
-                    <input class="modal-form-guests" type="text" id="auth-adults" name="auth-adults" placeholder="2">
+                    <input class="modal-form-guests" type="text" id="auth-adults" name="auth-adults" placeholder="2"
+                      required>
                     <button class="modal-button modal-button-plus" type="button">
                       <svg class="modal-picture" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                         width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -309,8 +310,8 @@
                         <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
-                    <input class="modal-form-guests" type="text" name="auth-children" placeholder="2"
-                      id="auth-children">
+                    <input class="modal-form-guests" type="text" name="auth-children" placeholder="2" id="auth-children"
+                      required>
                     <button class="modal-button modal-button-plus" type="button">
                       <svg class="modal-picture" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                         width="20" height="20" fill="none" viewBox="0 0 20 20">

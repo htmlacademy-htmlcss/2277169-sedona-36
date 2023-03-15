@@ -279,11 +279,11 @@ body {
 /*hero блок*/
 
 .hero-background {
+  background-color: #756157;
   background-image: url("../images/icons/hero-ladder.svg"),
     url("../images/pictures/the-mountains-picture.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
-  background-color: #756157;
   background-size: 100% auto;
   height: 484px;
   width: 1200px;
@@ -1250,7 +1250,6 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #ffffff;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.3);
 }
