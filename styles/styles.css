@@ -1511,12 +1511,12 @@ body {
 }
 
 .modal-button-search {
-  display: block;
   font-size: 20px;
   line-height: 24px;
-  padding: 18px 0;
+  padding: 18px 18px;
   min-height: 60px;
   border-radius: 10px;
+  width: 577px;
 }
 
 .modal-button-date {
